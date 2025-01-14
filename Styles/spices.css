@@ -1,0 +1,127 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('/meat/background.png') no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-size 0.5s ease;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero .content {
+    padding-left: 30px;
+    position: relative;
+    z-index: 1;
+    text-align: start;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero .content p {
+    font-size: 5px;
+    margin: 20px 0;
+    /* margin-top: 30px; */
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    padding: 20px;
+}
+
+.products-grid button {
+    color: #000;
+    background: #e0e69d;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+
+    .hero .content p {
+        font-size: 60px; /* Reduce hero text size */
+    }
+
+    .products-grid {
+        padding: 10px; /* Reduce padding for products grid */
+    }
+
+    .product-card {
+        max-width: 100%; /* Allow product cards to take full width */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero .content p {
+        font-size: 40px; /* Further reduce hero text size */
+    }
+
+    header .logo p {
+        font-size: 18px; /* Adjust logo text size */
+    }
+
+    header nav ul li {
+        margin: 0 10px; /* Adjust margin for navigation items */
+    }
+
+    header .contact p {
+        font-size: 10px; /* Reduce contact text size */
+    }
+
+    .product-card h3 {
+        font-size: 1rem; /* Reduce product card title size */
+    }
+
+    .product-card p {
+        font-size: 0.9rem; /* Reduce product card price size */
+    }
+}

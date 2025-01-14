@@ -1,0 +1,84 @@
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .column {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer .column h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #eaeaea;
+}
+
+.footer .column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .column ul li {
+    margin-bottom: 10px;
+}
+
+.footer .column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer .brand span {
+    color: #4caf50;
+}
+
+.footer p {
+    margin: 5px 0;
+    color: #cccccc;
+}
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column; /* Stack columns vertically */
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer .column1,
+    .footer .column2,
+    .footer .column3 {
+      flex: none;
+      width: 100%; /* Full-width columns */
+      text-align: center; /* Center content on small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 20px; /* Adjust padding for small screens */
+    }
+  
+    .footer .brand {
+      font-size: 20px; /* Adjust brand font size */
+    }
+  
+    .footer .column h4 {
+      font-size: 16px; /* Adjust heading font size */
+    }
+  }
+  
