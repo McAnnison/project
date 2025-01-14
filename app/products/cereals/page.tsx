@@ -19,7 +19,7 @@ const cereals: React.FC = () => {
               <div className="products-grid">
                   {/* Product Card 1 */}
                   <div className="product-card">
-                      <img src="/grains/maize.png" alt="Fresh Dried Maize" />
+                      <img src="../assets/grains/maize.png" alt="Fresh Dried Maize" />
                       <h3>Fresh Dried Maize</h3>
                       <p>10 GH₵</p>
                       <button>

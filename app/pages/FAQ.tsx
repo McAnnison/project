@@ -1,5 +1,5 @@
 import React from 'react';
-import '../FAQ.css'; 
+import '../Styles/FAQ.css';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 

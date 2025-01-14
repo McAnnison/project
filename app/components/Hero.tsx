@@ -1,12 +1,12 @@
 import React from 'react';
-import Navbar from './Navbar'; 
-import '../Home.css';
+
+import '../Styles/Home.css';
  
 
 const Hero: React.FC = () => {
   return (
     <div>
-      <Navbar />
+      
 
       <section className="hero">
         <div className="hero-content">
@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
 
       <section className="features">
         <div className="feature">
-          <img src="/assets/fast-delivery.png" alt="Fast Delivery" />
+          <img class="fast" alt="Fast Delivery" />
           <h3>Very Fast Delivery</h3>
           <p>Low delivery costs</p>
         </div>
@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
           <p>We ensure your money is safe</p>
         </div>
         <div className="feature">
-          <img src="/assets/guarantee.png" alt="Money-Back Guarantee" />
+          <img alt="Money-Back Guarantee" />
           <h3>Money-Back Guarantee</h3>
           <p>30 days money-back</p>
         </div>
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
         <h2>Product Category</h2>
         <div className="category-grid">
           <div className="category">
-            <img src="../public/assets/home/meat-back.png" alt="Fresh Meat" />
+            <img id="image1" alt="Fresh Meat" />
             <h3>Fresh Meat</h3>
             <p>We provide you with the best of meat</p>
           </div>

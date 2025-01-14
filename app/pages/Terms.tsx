@@ -1,5 +1,5 @@
 import React from 'react';
-import './terms.css'; 
+import '../Styles/terms.css'; 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 

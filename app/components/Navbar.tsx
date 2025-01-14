@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import "../header.css";
+import "../Styles/header.css";
 
 const Navbar: React.FC = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
       <nav>
         <ul className="nav-links">
           <li>
-            <Link href="/">Home</Link>
+            <Link href="">Home</Link>
           </li>
           <li
             className="dropdown"
@@ -32,22 +32,25 @@ const Navbar: React.FC = () => {
                   <Link href="/products/Oil">Oil</Link>
                 </li>
                 <li>
-                  <Link href="/meat">Meat</Link>
+                  <Link href="/products/Meat">Meat</Link>
                 </li>
                 <li>
-                  <Link href="/fish">Fish</Link>
+                  <Link href="/products/Fish">Fish</Link>
                 </li>
                 <li>
-                  <Link href="/cereals">Cereals</Link>
+                  <Link href="/products/cereals">Cereals</Link>
                 </li>
                 <li>
-                  <Link href="/fruits">Fruits</Link>
+                  <Link href="/products/Fruit">Fruits</Link>
                 </li>
                 <li>
-                  <Link href="/vegetables">Vegetables</Link>
+                  <Link href="/products/Vegetable">Vegetables</Link>
                 </li>
                 <li>
-                  <Link href="/spices">Spices</Link>
+                  <Link href="/products/Spices">Spices</Link>
+                </li>
+                <li>
+                  <Link href="/products/Tuber">Tuber</Link>
                 </li>
               </ul>
             )}
@@ -62,7 +65,7 @@ const Navbar: React.FC = () => {
             {pagesDropdownOpen && (
               <ul className="dropdown-menu">
                 <li>
-                  <Link href="#wishlist">My Wishlist</Link>
+                  <Link href="./products/Wishlist">My Wishlist</Link>
                 </li>
                 <li>
                   <Link href="#cart">Shopping Cart</Link>
@@ -71,13 +74,13 @@ const Navbar: React.FC = () => {
                   <Link href="#contact">Contact Us</Link>
                 </li>
                 <li>
-                  <Link href="#terms">Terms & Conditions</Link>
+                  <Link href="/pages/Terms">Terms & Conditions</Link>
                 </li>
               </ul>
             )}
           </li>
           <li>
-            <Link href="About.tsx">About Us</Link>
+            <Link href="/">About Us</Link>
           </li>
         </ul>
       </nav>

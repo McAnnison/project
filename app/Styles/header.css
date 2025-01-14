@@ -38,6 +38,8 @@ header {
   nav {
     background-color: #ffffff;
     padding: 10px 20px;
+    position: sticky; top: 0;
+    backdrop-filter: blur(45px);
   }
   
   .nav-links {
@@ -47,7 +49,7 @@ header {
   }
   
   .nav-links > li {
-    position: relative; /* Required for dropdown positioning */
+    position: relative; 
     margin-right: 20px;
   }
   
@@ -59,7 +61,7 @@ header {
   }
   
   .nav-links a:hover {
-    background-color: #f3eb80;
+    background-color: #fff9a7;
     border-radius: 5px;
   }
   
@@ -99,14 +101,14 @@ header {
     color: #000;
   }
   
-  .dropdown-menu li a:hover {
-    color: #4caf50;
-  }
-  
   
   /* Show dropdown on hover */
   .nav-links > li:hover .dropdown {
-    display: block; /* Show dropdown when hovering over the parent */
+    display: block; 
+  }
+  /* Show dropdown on hover */
+  .nav-links > li:active .dropdown {
+    display: block; 
   }
   
   header .header-right {
