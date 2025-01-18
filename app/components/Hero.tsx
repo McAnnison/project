@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '../Styles/Home.css';
+import Features from './Features';
  
 
 const Hero: React.FC = () => {
@@ -11,33 +12,11 @@ const Hero: React.FC = () => {
       <section className="hero">
         <div className="hero-content">
           <h1>Welcome to Fresh Fields</h1>
-          <p>Fresh & Healthy Farm Products</p>
+          <p>Fresh and Healthy Farm Products</p>
           <a href="#shop" className="btn">Shop now</a>
         </div>
       </section>
-
-      <section className="features">
-        <div className="feature">
-          <img class="fast" alt="Fast Delivery" />
-          <h3>Very Fast Delivery</h3>
-          <p>Low delivery costs</p>
-        </div>
-        <div className="feature">
-          <img src="/assets/support.png" alt="Support" />
-          <h3>Great Support 24/7</h3>
-          <p>Instant access to contact</p>
-        </div>
-        <div className="feature">
-          <img src="/assets/payment.png" alt="Secure Payment" />
-          <h3>100% Secure Payment</h3>
-          <p>We ensure your money is safe</p>
-        </div>
-        <div className="feature">
-          <img alt="Money-Back Guarantee" />
-          <h3>Money-Back Guarantee</h3>
-          <p>30 days money-back</p>
-        </div>
-      </section>
+      <Features/>
 
       <section className="product-category">
         <h2>Product Category</h2>
@@ -48,11 +27,11 @@ const Hero: React.FC = () => {
             <p>We provide you with the best of meat</p>
           </div>
           <div className="category">
-            <img src="/fish/back.png" alt="Fresh Fish" />
+            <img id="image2" alt="Fresh Fish" />
             <h3>Fresh Fish</h3>
           </div>
           <div className="category">
-            <img src="/oil/oil-back.png" alt="Oil" />
+            <img id='image3' alt="Oil" />
             <h3>Oil</h3>
           </div>
           <div className="category">

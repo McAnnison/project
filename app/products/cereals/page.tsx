@@ -1,7 +1,7 @@
 import React from "react";
-import "./cereals.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import "../../Styles/cereals.css";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 const cereals: React.FC = () => {
   return (

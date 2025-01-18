@@ -1,17 +1,25 @@
 import React from 'react';
-import '../Styles/privacy.css';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import '../../Styles/privacy.css';
+import Footer from '../../components/Footer';
+import Navbar from '../../components/Navbar';
+
 
 const PrivacyPolicy: React.FC = () => {
   return (
     <><Navbar/>
-    <div className="privacy-policy-container">
+    <div className="privacy-poilicy-container">
       <h1>Privacy Policy</h1>
-
+      <div className="content">
+        <div className="privacy-image"></div>
+        <div className="privacy-text">
+          <p>Welcome to our Privacy Policy page. Here, you can learn about how we handle your personal information and ensure your privacy is protected.</p>
+        </div>
+      </div>
+    
+  
       <h2>Introduction</h2>
       <p>
-        At [Your Agricultural Firm Name], we value your privacy and are committed to protecting your personal information.
+        At Fresh Feilds, we value your privacy and are committed to protecting your personal information.
         This Privacy Policy explains how we collect, use, and safeguard your data.
       </p>
 

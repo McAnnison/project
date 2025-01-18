@@ -1,7 +1,7 @@
 import React from 'react';
-import '../Styles/FAQ.css';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import '../../Styles/FAQ.css';
+import Footer from '../../components/Footer';
+import Navbar from '../../components/Navbar';
 
 const FAQ: React.FC = () => {
   const faqs = [

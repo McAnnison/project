@@ -7,25 +7,36 @@ import "../Styles/header.css";
 const Navbar: React.FC = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [pagesDropdownOpen, setPagesDropdownOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
 
   return (
     <header className="header">
       <div className="logo">
-        <img src="../assates/home/logo.png" alt="Fresh Fields Logo" />
+        <img  />
         <p>FRESH FIELDS</p>
       </div>
-      <nav>
+      <button
+        className="hamburger"
+        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        aria-label="Toggle navigation"
+      >
+        <span className="hamburger-line"></span>
+        <span className="hamburger-line"></span>
+        <span className="hamburger-line"></span>
+      </button>
+      <nav className={`nav ${isMobileMenuOpen ? "nav-open" : ""}`}>
         <ul className="nav-links">
           <li>
-            <Link href="">Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li
             className="dropdown"
             onMouseEnter={() => setDropdownOpen(true)}
             onMouseLeave={() => setDropdownOpen(false)}
+            onClick={() => setDropdownOpen(!dropdownOpen)}
           >
             <Link href="/">Shop</Link>
-            <span className="dropdown-label"></span>
             {dropdownOpen && (
               <ul className="dropdown-menu">
                 <li>
@@ -59,16 +70,16 @@ const Navbar: React.FC = () => {
             className="dropdown"
             onMouseEnter={() => setPagesDropdownOpen(true)}
             onMouseLeave={() => setPagesDropdownOpen(false)}
+            onClick={() => setPagesDropdownOpen(!pagesDropdownOpen)}
           >
             <Link href="/">Pages</Link>
-            <span className="dropdown-label"></span>
             {pagesDropdownOpen && (
               <ul className="dropdown-menu">
                 <li>
-                  <Link href="./products/Wishlist">My Wishlist</Link>
+                  <Link href="/pages/Wishlist">My Wishlist</Link>
                 </li>
                 <li>
-                  <Link href="#cart">Shopping Cart</Link>
+                  <Link href="">Shopping Cart</Link>
                 </li>
                 <li>
                   <Link href="#contact">Contact Us</Link>

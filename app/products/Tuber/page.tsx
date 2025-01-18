@@ -1,6 +1,7 @@
 import React from 'react';
-import './tuber.css'; 
+import '../../Styles/tuber.css'; 
 import Navbar from '../../components/Navbar';
+import Footer from '@/app/components/Footer';
 
 const Tuber: React.FC = () => {
   const products = [

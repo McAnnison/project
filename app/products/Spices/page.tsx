@@ -1,7 +1,7 @@
 import React from 'react';
-import './spices.css';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import '../../Styles/spices.css';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 const Spices: React.FC = () => {
   const products = [

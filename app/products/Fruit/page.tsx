@@ -1,7 +1,7 @@
 import React from "react";
-import "./fruits.css";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import "../../Styles/fruits.css";
+import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
 
 const Fruits: React.FC = () => {
   const fruitsData = [

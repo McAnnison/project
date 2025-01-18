@@ -1,0 +1,150 @@
+/* .features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+
+  .delivery img{
+    background: url("../public/assets/delivery.png")
+  }
+  
+  .featureCard {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .icon {
+    font-size: 40px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+  
+  .featureCard h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .featureCard p {
+    font-size: 14px;
+    color: #666;
+  }
+   */
+
+   .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .feature {
+    flex: 1 1 calc(25% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  h1{
+    text-align: center;
+  }
+  
+  .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .feature h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+  }
+  
+  .delivery img {
+    
+     border-radius: 50%;
+    background: url('../public/assets/delivery.png');
+    /* height: 80px; */
+  }
+  
+  .support img{
+   background: url('../public/assets/delivery.png');
+    border-radius: 50%;
+  }
+  
+  .secure img {
+   background: url('../public/assets/delivery.png');
+    border-radius: 50%;
+  }
+  
+  .guarant img {
+   background: url('../public/assets/delivery.png');
+    border-radius: 50%;
+  }
+  
+  @keyframes flyIn {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .feature {
+      flex: 1 1 calc(33.33% - 40px);
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .feature {
+      flex: 1 1 calc(50% - 40px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .feature {
+      flex: 1 1 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .feature img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .feature h3 {
+      font-size: 1rem;
+    }
+  
+    .feature p {
+      font-size: 0.9rem;
+    }
+  }

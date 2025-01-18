@@ -1,7 +1,7 @@
 import React from 'react';
-import './Vegetables.css'; 
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import '../../Styles/vege.css'; 
+import Footer from '../../components/Footer';
+import Navbar from '../../components/Navbar';
 
 const Vegetables: React.FC = () => {
   const products = [

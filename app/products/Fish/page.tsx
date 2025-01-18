@@ -1,7 +1,7 @@
 import React from "react";
-import "./Fish.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import "../../Styles/vege.css";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 const Fish: React.FC = () => {
   return (

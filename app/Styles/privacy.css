@@ -1,32 +1,99 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #eff7a9;
+  color: #212529;
+  line-height: 1.6;
+}
+
 .privacy-policy-container {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    max-width: 800px;
-    margin: 20px auto;
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 20px;
-    margin-top: 20px;
-  }
-  
-  p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 10px 0;
-  }
-  
-  ul {
-    margin: 10px 0;
-    padding-left: 20px;
-  }
-  
-  li {
-    font-size: 16px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 20px;
+  width: 100%;
+  gap: 20px;
+}
+
+.privacy-image {
+  flex: 1;
+  width: 400px;
+  height: 400px;
+  background-image: url('../public/assets/privacy.back.jpg'); 
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+
+h1, h2 {
+  font-weight: 700;
+  color: #343a40;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+li::before {
+  /* content: '\2022'; */
+  position: absolute;
+  left: 0;
+  /* color: #17a2b8; */
+  font-weight: bold;
+}
+
+a {
+  /* color: #17a2b8; */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  /* color: #117a8b; */
+  font-weight: 700;
+}
+
+.privacy-policy-container p,
+.privacy-policy-container ul {
+  transition: transform 0.3s ease;
+}
+
+.privacy-policy-container p:hover,
+.privacy-policy-container ul:hover {
+  transform: translateX(10px);
+}

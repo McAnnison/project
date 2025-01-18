@@ -1,5 +1,5 @@
 import React from "react";
-import  "../meat.css";
+import  "../../Styles/meat.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 

@@ -4,8 +4,8 @@ import '../Styles/footer.css';
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
-      <div className="footer-logo">
-        <img src="/assets/logo.png" alt="Fresh Fields Logo" />
+      <div className="column">
+        <img  alt="Fresh Fields Logo" />
         <p>FRESH FIELDS</p>
         <p>Harvesting Freshness, Delivering Quality</p>
       </div>
@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
         <div className="column">
           <h4>My Account</h4>
           <ul>
-            <li><a href="account.html">My Account</a></li>
+            <li><a href="my">My Account</a></li>
             <li><a href="orderhistory.html">Order History</a></li>
             <li><a href="shopping.html">Shopping Cart</a></li>
             <li><a href="wishlist.html">Wishlist</a></li>
@@ -29,9 +29,9 @@ const Footer: React.FC = () => {
           </p>
           <div className="column">
             <ul>
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="/pages/FAQ">FAQs</a></li>
+              <li><a href="/pages/Terms">Terms & Conditions</a></li>
+              <li><a href="/pages/PrivacyPolicy">Privacy Policy</a></li>
             </ul>
             </div>
         </div>
