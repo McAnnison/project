@@ -95,7 +95,25 @@ const Navbar: React.FC = () => {
         </ul>
       </nav>
       <div className="header-icons">
-        <div><Link href="/pages/signIn" >Sign Up</Link></div>
+      <li
+            className="dropdown"
+            onMouseEnter={() => setPagesDropdownOpen(true)}
+            onMouseLeave={() => setPagesDropdownOpen(false)}
+            onClick={() => setPagesDropdownOpen(!pagesDropdownOpen)}
+          >
+        <div><Link href="/" >Sign Up</Link></div>
+        {pagesDropdownOpen && (
+          <ul>
+            <li>
+              <Link href="/pages/signIn">Farmer</Link>
+            </li>
+            <li>
+              <Link href="/pages/signIn">Buyer</Link>
+            </li>
+          </ul>
+
+        )}
+        </li>
         <label htmlFor="email">Search</label>
         <input type="" id="email" name="email" placeholder="Enter your email" />
           <img src="/assets/search-icon.png" alt="Search Icon" />

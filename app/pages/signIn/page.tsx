@@ -42,7 +42,6 @@ const signIn = () => {
         <p>Or sign in with</p>
         <button className="googleButton">Sign in with Google</button>
         <button className="appleButton">Sign in with Apple</button>
-        <button className="facebookButton">Sign in with Facebook</button>
       </div>
       </form>
       </div>

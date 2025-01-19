@@ -66,28 +66,27 @@
   }
    
   .googleButton {
-    background-color: #4285f4;
+    background-color: #1c1c1d;
     color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    row-gap: 5px;
+    cursor: pointer;
   }
   
   .googleButton:hover {
-    background-color: #357ae8;
+    background-color: #000000;
   }
   
   .appleButton {
-    background-color: #000;
+    background-color: #313030;
     color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
   }
   
   .appleButton:hover {
-    background-color: #333;
+    background-color: #080808;
   }
   
-  .facebookButton {
-    background-color: #1877f2;
-    color: #fff;
-  }
-  
-  .facebookButton:hover {
-    background-color: #145db2;
-  }

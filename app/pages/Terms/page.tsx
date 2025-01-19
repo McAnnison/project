@@ -1,7 +1,7 @@
 import React from 'react';
-import '../Styles/terms.css'; 
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import '../../Styles/terms.css'; 
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 const Terms: React.FC = () => {
   return (
