@@ -5,10 +5,16 @@ body {
 }
 
 .footer {
-  background-image: url('../public/assets/home/logo.png');
+ 
   background-color: #1f2020;
   color: #d1d5db;
-  padding: 3rem 0;
+  padding: 0.1rem 0;
+}
+
+.footer img {
+  background: url('../public/assets/home/logo.png');
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 .container {
@@ -24,8 +30,9 @@ body {
 }
 
 .logo {
-  height: 3rem;
+  height: 2rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .company-name {
@@ -72,11 +79,11 @@ body {
 /* Responsive styles */
 @media (max-width: 768px) {
   .footer-container {
-    flex-direction: column; /* Stack elements vertically on small screens */
+    flex-direction: column; 
   }
 
   .footer-links {
-    flex-direction: column; /* Stack columns vertically */
+    flex-direction: column; 
   }
 }
 
@@ -88,7 +95,7 @@ body {
   }
 
   .footer .column {
-    flex-basis: 100%; /* Full width on smaller screens */
+    flex-basis: 100%; 
     margin-bottom: 20px;
   }
 }

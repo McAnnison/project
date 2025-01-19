@@ -4,9 +4,10 @@ import '../Styles/footer.css';
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
-      <div className="column">
-        <img/>
-        <p>FRESH FIELDS</p>
+     
+      <div className="column">    
+        <div className='logo'> <img/>
+        <p>FRESH FIELDS</p></div>    
         <p>Harvesting Freshness, Delivering Quality</p>
       </div>
       <div className="footer-links">

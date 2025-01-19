@@ -65,3 +65,29 @@
     background-color: #388e3c;
   }
    
+  .googleButton {
+    background-color: #4285f4;
+    color: #fff;
+  }
+  
+  .googleButton:hover {
+    background-color: #357ae8;
+  }
+  
+  .appleButton {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .appleButton:hover {
+    background-color: #333;
+  }
+  
+  .facebookButton {
+    background-color: #1877f2;
+    color: #fff;
+  }
+  
+  .facebookButton:hover {
+    background-color: #145db2;
+  }
