@@ -9,13 +9,18 @@ header {
 
 .logo {
   display: flex;
-  align-items: center;
+  align-items: center;    
 }
-
 .logo img {
   height: 2rem;
-  margin-right: 0.5rem;
   background: url('../public/assets/home/logo.png');
+  background-repeat: no-repeat; 
+} 
+
+.logo p {
+  font-weight: 700;
+  font-size: 30px;
+  color: #04411f;
 }
 
 nav {
@@ -38,6 +43,11 @@ nav {
   padding: 1rem;
   color: #000000;
   text-decoration: none;
+  transition: font-weight 0.3s ease-in-out; /* Adds smooth hover effect */
+}
+
+.nav-links a:hover {
+  font-weight: bold; /* Makes links bold on hover */
 }
 
 .dropdown-menu {
@@ -78,7 +88,14 @@ nav {
   margin-left: 1rem;
 }
 
-/* Dropdown animation */
+.search-label {
+  display: none; /* Initially hide the search label */
+}
+
+.header-icons img:hover + .search-label {
+  display: inline-block; /* Show search label on click or hover */
+}
+
 .dropdown-menu {
   transform: translateY(-10px);
   opacity: 0;
@@ -92,7 +109,6 @@ nav {
   visibility: visible;
 }
 
-/* Hamburger menu animation */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -105,7 +121,7 @@ nav {
   display: block;
   height: 3px;
   width: 24px;
-  background-color: #fff;
+  background-color: #111;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -119,6 +135,20 @@ nav {
 
 .nav-open .hamburger span:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 0.8rem;
+  }
+
+  .logo img {
+    height: 1.8rem;
+  }
+
+  .nav-links a {
+    padding: 0.8rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -171,44 +201,24 @@ nav {
     display: flex;
   }
 }
-/* 
-@media (max-width: 768px) {
-  .nav {
-    display: none;
+
+@media (max-width: 480px) {
+  header {
     flex-direction: column;
-    background-color: #4caf50;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
+    align-items: flex-start;
   }
 
-  .nav-open {
-    display: flex;
+  .logo {
+    margin-bottom: 1rem;
   }
 
-  .nav-links {
-    flex-direction: column;
-    gap: 0;
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 0.7rem;
   }
 
-  .nav-links li {
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-} */
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .hamburger span {
+    width: 20px;
+    height: 2.5px;
   }
 }

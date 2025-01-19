@@ -12,8 +12,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="header">
-      <div className="logo">
-        <img  />
+      <div className="logo"> <img />
         <p>FRESH FIELDS</p>
       </div>
       <button
@@ -96,9 +95,11 @@ const Navbar: React.FC = () => {
         </ul>
       </nav>
       <div className="header-icons">
-        <button className="search-button" aria-label="Search">
+        <div><Link href="/pages/signIn" >Sign Up</Link></div>
+        <label htmlFor="email">Search</label>
+        <input type="" id="email" name="email" placeholder="Enter your email" />
           <img src="/assets/search-icon.png" alt="Search Icon" />
-        </button>
+        
         <img src="/assets/cart-icon.png" alt="Cart" />
         <div className="contact">
           <a href="tel:9430144469">9430144469</a>
