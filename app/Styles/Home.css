@@ -1,12 +1,4 @@
-/* body {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
-   } */
-  
-  /* Hero Section Styles */
+
   .hero {
     position: relative;
     background: url('../public/assets/home/heroBasket.png') no-repeat center left;
@@ -51,14 +43,14 @@
 }
   
   .hero-content a {
-    
+    text-align: right;
       padding: 10px 20px;
       background-color: #0a8326;
       color: white;
       text-decoration: none;
       border-radius: 5px;
       font-size: 1rem;
-      display: right;
+      /* display: right; */
       transition: background-color 0.3s ease;
     }
 
@@ -68,7 +60,7 @@
   
   
   
-  /* Product Category Section */
+  
   .product-category {
     padding: 50px 100px;
   }
@@ -83,11 +75,30 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
   }
-  .category-grid .category .image1 {
+  .category-meat{
    background: url("../public/assets/meat/meat-back.png");
+   height: 150px;
   }
   
-  .category-grid .category .image2 {
+  .category-fish {
+   background: url("../public/assets/fruits/back.png");
+  }
+  .category-fruits {
+   background: url("../public/assets/fruits/back.png");
+  }
+  .category-grain {
+   background: url("../public/assets/fruits/back.png");
+  }
+  .category-vege {
+   background: url("../public/assets/fruits/back.png");
+  }
+  .category-tuber {
+   background: url("../public/assets/fruits/back.png");
+  }
+  .category-spice {
+   background: url("../public/assets/fruits/back.png");
+  }
+  .category-oil {
    background: url("../public/assets/fruits/back.png");
   }
   

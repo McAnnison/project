@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
         <div className="hero-content">
           <h1>Welcome to Fresh Fields</h1>
           <p>Fresh and Healthy Farm Products</p>
-          <a href="#shop" className="btn">Shop now</a>
+          <a href="/pages/allProducts" className="btn">Shop now</a>
         </div>
       </section>
       <Features/>
@@ -21,37 +21,37 @@ const Hero: React.FC = () => {
       <section className="product-category">
         <h2>Product Category</h2>
         <div className="category-grid">
-          <div className="category">
-            <img id="image1" alt="Fresh Meat" />
+          <div className="category-meat">
+            <img  />
             <h3>Fresh Meat</h3>
             <p>We provide you with the best of meat</p>
           </div>
-          <div className="category">
-            <img id="image2" alt="Fresh Fish" />
+          <div className="category-fish">
+            <img />
             <h3>Fresh Fish</h3>
           </div>
-          <div className="category">
-            <img id='image3' alt="Oil" />
+          <div className="category-oil">
+            <img  />
             <h3>Oil</h3>
           </div>
-          <div className="category">
-            <img src="/fruits/back.png" alt="Fruits" />
+          <div className="category-fruits">
+            <img  />
             <h3>Fruits</h3>
           </div>
-          <div className="category">
-            <img src="/vegetables/vege-back.png" alt="Vegetables" />
+          <div className="category-vege">
+            <img  />
             <h3>Vegetables</h3>
           </div>
-          <div className="category">
-            <img src="/grains/grains-back.png" alt="Legumes and Grains" />
+          <div className="category-grain">
+            <img />
             <h3>Legumes, Grains, and Cereals</h3>
           </div>
-          <div className="category">
-            <img src="/tuber/tuber-back.png" alt="Tubers" />
+          <div className="category-tuber">
+            <img />
             <h3>Tubers</h3>
           </div>
-          <div className="category">
-            <img src="/public/assets/spices/spices-back.png" alt="Herbs and Spices" />
+          <div className="category-spice">
+            <img />
             <h3>Herbs and Spices</h3>
           </div>
         </div>

@@ -5,6 +5,13 @@ header {
   padding: 1rem;
   background-color: #ffffff;
   color: #111111;
+  position: fixed; 
+  top: 0; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 100%;
+  left: 0;
+  margin-bottom: 50px;
 }
 
 .logo {
@@ -12,7 +19,7 @@ header {
   align-items: center;    
 }
 .logo img {
-  height: 2rem;
+  height: 4rem;
   background: url('../public/assets/home/logo.png');
   background-repeat: no-repeat; 
 } 
@@ -43,11 +50,11 @@ nav {
   padding: 1rem;
   color: #000000;
   text-decoration: none;
-  transition: font-weight 0.3s ease-in-out; /* Adds smooth hover effect */
+  transition: font-weight 0.3s ease-in-out; 
 }
 
 .nav-links a:hover {
-  font-weight: bold; /* Makes links bold on hover */
+  font-weight: bold; 
 }
 
 .dropdown-menu {
@@ -89,14 +96,25 @@ nav {
 }
 
 .search-label {
-  display: none; /* Initially hide the search label */
+  display: none; 
+}
+
+.search input {
+  padding: 8px 10px;
+  border-radius: 6px;
 }
 
 .header-icons img:hover + .search-label {
-  display: inline-block; /* Show search label on click or hover */
+  display: inline-block; 
 }
 
 .dropdown-menu {
+  transform: translateY(-10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.header-icons .dropdown-menu {
   transform: translateY(-10px);
   opacity: 0;
   visibility: hidden;
@@ -107,6 +125,15 @@ nav {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
+}
+.header-icons  .dropdown:hover .dropdown-menu {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.search img {
+  background: url('../public/assets/search-icon.png');
 }
 
 .hamburger {

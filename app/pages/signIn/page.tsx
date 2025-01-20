@@ -40,8 +40,8 @@ const signIn = () => {
        
       <div className="socialSignIn">
         <p>Or sign in with</p>
-        <button className="googleButton">Sign in with Google</button>
-        <button className="appleButton">Sign in with Apple</button>
+        <button className="googleButton"><img/>Sign in with Google</button>
+        <button className="appleButton"><img/>Sign in with Apple</button>
       </div>
       </form>
       </div>

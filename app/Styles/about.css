@@ -1,0 +1,117 @@
+.about-page {
+    font-family: Arial, sans-serif;
+    color: #111111;
+    padding: 2rem;
+    background-color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  .intro-section {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #143b05;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #555555;
+    margin-top: 1rem;
+  }
+  
+  .content-section {
+    background: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 80px 80px;
+  }
+  
+  .content-section h2 {
+    font-size: 2.2rem;
+    color: #2b7a0b;
+    margin-bottom: 1rem;
+  }
+  
+  .content-section p {
+    font-size: 1.5rem;
+    color: #333333;
+    margin: 0;
+    text-align: justify;
+  }
+  
+  @media (max-width: 1024px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+    }
+  
+    .content-section {
+      padding: 1.5rem;
+    }
+  
+    .content-section h2 {
+      font-size: 1.6rem;
+    }
+  
+    .content-section p {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 0.9rem;
+    }
+  
+    .content-section {
+      padding: 1.2rem;
+    }
+  
+    .content-section h2 {
+      font-size: 1.4rem;
+    }
+  
+    .content-section p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-page {
+      padding: 1rem;
+    }
+  
+    .title {
+      font-size: 1.8rem;
+    }
+  
+    .subtitle {
+      font-size: 0.85rem;
+    }
+  
+    .content-section {
+      padding: 1rem;
+    }
+  
+    .content-section h2 {
+      font-size: 1.2rem;
+    }
+  
+    .content-section p {
+      font-size: 0.85rem;
+    }
+  }

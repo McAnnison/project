@@ -5,16 +5,18 @@ import Link from "next/link";
 import "../Styles/header.css";
 
 const Navbar: React.FC = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [shopDropdownOpen, setShopDropdownOpen] = useState(false);
   const [pagesDropdownOpen, setPagesDropdownOpen] = useState(false);
+  const [signUpDropdownOpen, setSignUpDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
 
   return (
     <header className="header">
-      <div className="logo"> <img />
+      <div className="logo">
+        <img/>
         <p>FRESH FIELDS</p>
       </div>
+      
       <button
         className="hamburger"
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -24,47 +26,31 @@ const Navbar: React.FC = () => {
         <span className="hamburger-line"></span>
         <span className="hamburger-line"></span>
       </button>
-      <nav className={`nav ${isMobileMenuOpen ? "nav-open" : ""}`}>
+
+        <nav className={`nav ${isMobileMenuOpen ? "nav-open" : ""}`}>
         <ul className="nav-links">
           <li>
             <Link href="/">Home</Link>
           </li>
+
           <li
             className="dropdown"
-            onMouseEnter={() => setDropdownOpen(true)}
-            onMouseLeave={() => setDropdownOpen(false)}
-            onClick={() => setDropdownOpen(!dropdownOpen)}
+            onMouseEnter={() => setShopDropdownOpen(true)}
+            onMouseLeave={() => setShopDropdownOpen(false)}
+            onClick={() => setShopDropdownOpen(!shopDropdownOpen)}
           >
             <Link href="/">Shop</Link>
-            {dropdownOpen && (
+            {shopDropdownOpen && (
               <ul className="dropdown-menu">
-                <li>
-                  <Link href="/products/Oil">Oil</Link>
-                </li>
-                <li>
-                  <Link href="/products/Meat">Meat</Link>
-                </li>
-                <li>
-                  <Link href="/products/Fish">Fish</Link>
-                </li>
-                <li>
-                  <Link href="/products/cereals">Cereals</Link>
-                </li>
-                <li>
-                  <Link href="/products/Fruit">Fruits</Link>
-                </li>
-                <li>
-                  <Link href="/products/Vegetable">Vegetables</Link>
-                </li>
-                <li>
-                  <Link href="/products/Spices">Spices</Link>
-                </li>
-                <li>
-                  <Link href="/products/Tuber">Tuber</Link>
-                </li>
+                {["Oil", "Meat", "Fish", "Cereals", "Fruits", "Vegetables", "Spices", "Tuber"].map((item) => (
+                  <li key={item}>
+                    <Link href={`/products/${item}`}>{item}</Link>
+                  </li>
+                ))}
               </ul>
             )}
           </li>
+
           <li
             className="dropdown"
             onMouseEnter={() => setPagesDropdownOpen(true)}
@@ -78,7 +64,7 @@ const Navbar: React.FC = () => {
                   <Link href="/pages/Wishlist">My Wishlist</Link>
                 </li>
                 <li>
-                  <Link href="">Shopping Cart</Link>
+                  <Link href="/cart">Shopping Cart</Link>
                 </li>
                 <li>
                   <Link href="#contact">Contact Us</Link>
@@ -89,36 +75,48 @@ const Navbar: React.FC = () => {
               </ul>
             )}
           </li>
+          
           <li>
-            <Link href="/">About Us</Link>
+            <Link href="/pages/aboutUs">About Us</Link>
           </li>
         </ul>
       </nav>
-      <div className="header-icons">
-      <li
-            className="dropdown"
-            onMouseEnter={() => setPagesDropdownOpen(true)}
-            onMouseLeave={() => setPagesDropdownOpen(false)}
-            onClick={() => setPagesDropdownOpen(!pagesDropdownOpen)}
-          >
-        <div><Link href="/" >Sign Up</Link></div>
-        {pagesDropdownOpen && (
-          <ul>
-            <li>
-              <Link href="/pages/signIn">Farmer</Link>
-            </li>
-            <li>
-              <Link href="/pages/signIn">Buyer</Link>
-            </li>
-          </ul>
 
-        )}
-        </li>
-        <label htmlFor="email">Search</label>
-        <input type="" id="email" name="email" placeholder="Enter your email" />
-          <img src="/assets/search-icon.png" alt="Search Icon" />
-        
-        <img src="/assets/cart-icon.png" alt="Cart" />
+  
+      <div className="header-icons">
+          <div
+          className="dropdown"
+          onMouseEnter={() => setSignUpDropdownOpen(true)}
+          onMouseLeave={() => setSignUpDropdownOpen(false)}
+          onClick={() => setSignUpDropdownOpen(!signUpDropdownOpen)}
+        >
+          <Link href="/">Sign Up</Link>
+          {signUpDropdownOpen && (
+            <ul className="dropdown-menu">
+              <li>
+                <Link href="/pages/signIn">Farmer</Link>
+              </li>
+              <li>
+                <Link href="/pages/signIn">Buyer</Link>
+              </li>
+            </ul>
+          )}
+        </div>
+
+       
+        <div className="search">
+          <label htmlFor="search" className="sr-only">
+          <img />
+          </label>
+          <input
+            type="text"
+            id="search"
+            name="search"
+            placeholder="Search..."
+            aria-label="Search"
+          />
+        </div>
+          <img src="/assets/cart-icon.png" alt="Cart" />
         <div className="contact">
           <a href="tel:9430144469">9430144469</a>
         </div>

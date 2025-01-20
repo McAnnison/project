@@ -1,37 +1,3 @@
-/* .features {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-  }
-
-  .delivery img{
-    background: url("../public/assets/delivery.png")
-  }
-  
-  .featureCard {
-    text-align: center;
-    max-width: 200px;
-  }
-  
-  .icon {
-    font-size: 40px;
-    color: #4CAF50;
-    margin-bottom: 10px;
-  }
-  
-  .featureCard h3 {
-    font-size: 18px;
-    font-weight: 700;
-    color: #333;
-  }
-  
-  .featureCard p {
-    font-size: 14px;
-    color: #666;
-  }
-   */
 
    .features {
     display: flex;
@@ -91,17 +57,17 @@
   }
   
   .support img{
-   background: url('../public/assets/delivery.png');
+   background: url('../public/assets/customer.png');
     border-radius: 50%;
   }
   
   .secure img {
-   background: url('../public/assets/delivery.png');
+   background: url('../public/assets/Icon.png');
     border-radius: 50%;
   }
   
   .guarant img {
-   background: url('../public/assets/delivery.png');
+   background: url('../public/assets/money.png');
     border-radius: 50%;
   }
   
