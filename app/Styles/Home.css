@@ -238,7 +238,7 @@ html {
   margin-bottom: 15px;
   animation: scaleIn 1s ease-in-out;
 }
-
+ 
 .category-meat .img {
   background: url('../public/assets/meat/meat-back.png');
 }

@@ -21,7 +21,7 @@ const aboutUs = () => {
 
         <section className="content-section">
           <div className="content-wrapper">
-            <img  alt="Fresh produce" className="image1" />
+            <img src="/assets/c4b4abc8c63cb3e79a96c2700606a0d9.jpg" alt="Fresh produce" className="image1" />
             <div className="text">
               <h2>About The Store</h2>
               <p>
@@ -44,13 +44,13 @@ const aboutUs = () => {
                 achieve a convenient way for customers to settle their bills.
               </p>
             </div>
-            <img  alt="Quality products" className="image2" />
+            <img src="/assets/30b5a8c829303d797ef09a362931b26c.jpg" alt="Quality products" className="image" />
           </div>
         </section>
 
         <section className="content-section">
           <div className="content-wrapper">
-            <img  alt="Our values" className="image3" />
+            <img src="/assets/37ed6b5dad052327cbf6c99e8beb9e4f.jpg" alt="Our values" className="image" />
             <div className="text">
               <h2>Our Values</h2>
               <p>
@@ -74,7 +74,7 @@ const aboutUs = () => {
                 delivered at their doorsteps.
               </p>
             </div>
-            <img  alt="Our mission" className="image4" />
+            <img src="/assets/fee6941507abac27ffbd5e831f133d97.jpg" alt="Our mission" className="image" />
           </div>
         </section>
       </div>

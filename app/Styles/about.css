@@ -42,8 +42,14 @@
   text-align: justify;
 }
 
-.content-section .image1 {
-    background: url('../public/assets/c4b4abc8c63cb3e79a96c2700606a0d9.jpg');
+.content-wrapper img{
+  height: 80px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.content-wrapper .image1 {
+    background: url('../public/assets/c4b4abc8c63cb3e79a96c2700606a0d9.jpg') cover;
     height: 80px;
     width: 100%;
 }
