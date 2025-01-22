@@ -1,0 +1,100 @@
+/* General Styling */
+.checkout-page {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    font-family: "Arial", sans-serif;
+    color: #333;
+  }
+  
+  .checkout-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #2b7a0b;
+    margin-bottom: 2rem;
+  }
+  
+  /* Form Styling */
+  .checkout-form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .form-section {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2b7a0b;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border-color: #2b7a0b;
+    box-shadow: 0 0 5px rgba(43, 122, 11, 0.5);
+  }
+  
+  /* Order Summary */
+  .order-summary {
+    border-top: 2px solid #2b7a0b;
+  }
+  
+  .order-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .order-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: #2b7a0b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background: #206107;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .checkout-form {
+      padding: 1rem;
+    }
+  
+    .form-section {
+      padding: 1rem;
+    }
+  }
+  

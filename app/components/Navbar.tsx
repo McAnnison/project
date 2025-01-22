@@ -13,12 +13,12 @@ const Navbar: React.FC = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img/>
+        <img src="/assets/logo.png"  className="logo-img" />
         <p>FRESH FIELDS</p>
       </div>
-      
+
       <button
-        className="hamburger"
+        className={`hamburger ${isMobileMenuOpen ? "active" : ""}`}
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         aria-label="Toggle navigation"
       >
@@ -27,14 +27,14 @@ const Navbar: React.FC = () => {
         <span className="hamburger-line"></span>
       </button>
 
-        <nav className={`nav ${isMobileMenuOpen ? "nav-open" : ""}`}>
+      <nav className={`nav ${isMobileMenuOpen ? "nav-open" : ""}`}>
         <ul className="nav-links">
           <li>
             <Link href="/">Home</Link>
           </li>
 
           <li
-            className="dropdown"
+            className={`dropdown ${shopDropdownOpen ? "open" : ""}`}
             onMouseEnter={() => setShopDropdownOpen(true)}
             onMouseLeave={() => setShopDropdownOpen(false)}
             onClick={() => setShopDropdownOpen(!shopDropdownOpen)}
@@ -42,7 +42,16 @@ const Navbar: React.FC = () => {
             <Link href="/">Shop</Link>
             {shopDropdownOpen && (
               <ul className="dropdown-menu">
-                {["Oil", "Meat", "Fish", "Cereals", "Fruits", "Vegetables", "Spices", "Tuber"].map((item) => (
+                {[
+                  "Oil",
+                  "Meat",
+                  "Fish",
+                  "Cereals",
+                  "Fruits",
+                  "Vegetables",
+                  "Spices",
+                  "Tuber",
+                ].map((item) => (
                   <li key={item}>
                     <Link href={`/products/${item}`}>{item}</Link>
                   </li>
@@ -52,7 +61,7 @@ const Navbar: React.FC = () => {
           </li>
 
           <li
-            className="dropdown"
+            className={`dropdown ${pagesDropdownOpen ? "open" : ""}`}
             onMouseEnter={() => setPagesDropdownOpen(true)}
             onMouseLeave={() => setPagesDropdownOpen(false)}
             onClick={() => setPagesDropdownOpen(!pagesDropdownOpen)}
@@ -64,7 +73,7 @@ const Navbar: React.FC = () => {
                   <Link href="/pages/Wishlist">My Wishlist</Link>
                 </li>
                 <li>
-                  <Link href="/cart">Shopping Cart</Link>
+                  <Link href="/pages/shoppingCart">Shopping Cart</Link>
                 </li>
                 <li>
                   <Link href="#contact">Contact Us</Link>
@@ -75,17 +84,16 @@ const Navbar: React.FC = () => {
               </ul>
             )}
           </li>
-          
+
           <li>
             <Link href="/pages/aboutUs">About Us</Link>
           </li>
         </ul>
       </nav>
 
-  
-      <div className="header-icons">
-          <div
-          className="dropdown"
+      
+        <div
+          className={`dropdown ${signUpDropdownOpen ? "open" : ""}`}
           onMouseEnter={() => setSignUpDropdownOpen(true)}
           onMouseLeave={() => setSignUpDropdownOpen(false)}
           onClick={() => setSignUpDropdownOpen(!signUpDropdownOpen)}
@@ -103,10 +111,10 @@ const Navbar: React.FC = () => {
           )}
         </div>
 
-       
+        <div className="header-icons">
         <div className="search">
           <label htmlFor="search" className="sr-only">
-          <img />
+            <img />
           </label>
           <input
             type="text"
@@ -116,7 +124,8 @@ const Navbar: React.FC = () => {
             aria-label="Search"
           />
         </div>
-          <img src="/assets/cart-icon.png" alt="Cart" />
+        <img  className="cart-icon" />
+
         <div className="contact">
           <a href="tel:9430144469">9430144469</a>
         </div>

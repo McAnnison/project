@@ -2,44 +2,46 @@ import React from 'react';
 
 import '../Styles/Home.css';
 import Features from './Features';
+import Footer from './Footer';
+import Navbar from './Navbar';
  
 
 const Hero: React.FC = () => {
   return (
-    <div>
-      
+    <><Navbar /><div>
 
       <section className="hero">
+      <img/>
         <div className="hero-content">
           <h1>Welcome to Fresh Fields</h1>
           <p>Fresh and Healthy Farm Products</p>
           <a href="/pages/allProducts" className="btn">Shop now</a>
         </div>
       </section>
-      <Features/>
+      <Features />
 
       <section className="product-category">
         <h2>Product Category</h2>
         <div className="category-grid">
           <div className="category-meat">
-            <img  />
+            <img />
             <h3>Fresh Meat</h3>
             <p>We provide you with the best of meat</p>
           </div>
           <div className="category-fish">
-            <img />
+            <img/>
             <h3>Fresh Fish</h3>
           </div>
           <div className="category-oil">
-            <img  />
+            <img />
             <h3>Oil</h3>
           </div>
           <div className="category-fruits">
-            <img  />
+            <img />
             <h3>Fruits</h3>
           </div>
           <div className="category-vege">
-            <img  />
+            <img />
             <h3>Vegetables</h3>
           </div>
           <div className="category-grain">
@@ -56,7 +58,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+    </div></>
   );
 };
 
